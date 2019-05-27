@@ -1,0 +1,258 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{xcolor}
+
+\definecolor{header-gray}{RGB}{147,147,147}
+\definecolor{left-side-bar-gray}{RGB}{239,239,239}
+\definecolor{right-side-bar-gray}{RGB}{242,242,242}
+\definecolor{right-main-gray}{RGB}{250,250,250}
+\definecolor{left-main-gray}{RGB}{242,242,242}
+
+\usepackage{enumitem}
+\setlist{itemsep=.05em}
+
+\usepackage{changepage}
+\usepackage{setspace}
+\usepackage[not1, notext]{stix}
+
+\usepackage{comment}
+
+\usepackage[margin=0pt, nofoot]{geometry}
+\addtolength{\topmargin}{-30pt}
+\addtolength{\footskip}{-30pt}
+
+\usepackage[hidelinks]{hyperref}
+
+\begin{document}
+	\pagenumbering{gobble}
+
+	\begin{tikzpicture}[remember picture,overlay]
+		\fill[header-gray] (current page.north west) rectangle ($(current page.north east)-(0cm,2.5cm)$);
+	\end{tikzpicture}
+
+	\begin{tikzpicture}[remember picture,overlay]
+		\shade[left color = left-side-bar-gray, right color = right-side-bar-gray] ($(current page.north east)-(6.3cm,2.5cm)$) rectangle (current page.south east);
+	\end{tikzpicture}
+
+	\begin{tikzpicture}[remember picture,overlay]
+		\shade[left color = left-main-gray, right color = right-main-gray] ($(current page.north west)-(0cm,2.5cm)$) rectangle ($(current page.south east)-(6.3cm,0cm)$);
+	\end{tikzpicture}
+
+	\Huge \textbf{Bruno Vale Barbosa Eiterer}
+
+	\LARGE Developer
+	\vspace{12.5pt}
+	\begin{adjustwidth}{\parindent}{0pt}
+	\begin{minipage}[t]{0.65\textwidth}
+	\large Current interests include low-level embedded software, close to the hardware, as well as development of the hardware itself, matching the experience acquired during my career. I'm also interested in high-level software and app development in Python and C\#. \\
+
+	\Large{\textbf{Experiences}} \normalsize \\ \rule{\textwidth}{0.5pt} \\ \\
+	\begin{minipage}[t]{0.2\textwidth}
+	\large{04/2018 - \\ 02/2019}
+	\end{minipage}
+	\begin{minipage}[t]{0.8\textwidth}
+	{
+	  \setlength{\parskip}{5.5pt}
+	  \Large{\textbf{ASML - The Netherlands}}
+	  
+	  \large{Worldwide leader in lithography machines, used in integrated circuits manufacturing}
+	  
+	  \large{\textit{Embedded Software Intern in the Motion Control team}}
+	  \begin{itemize}
+	    \item \normalsize{Implementation of an EtherCAT protocol prototype in C}
+	    \item \normalsize{Implementation of test code in Python}
+	    \item \normalsize{Succesful integration of the protocol with existing code}
+	    \item \normalsize{Development of getting started tutorials for new team members}
+	  \end{itemize}
+	}
+\end{minipage} \\ \\
+
+\begin{minipage}[t]{0.2\textwidth}
+  \large{01/2014 - \\ 03/2018}
+\end{minipage}
+\begin{minipage}[t]{0.8\textwidth}
+{
+  \setlength{\parskip}{5.5pt}
+  \Large{\textbf{Embedded Systems Group - UFSC}}
+  
+  \large{\textbf{Floripa-Sat project team member}}
+  
+  \large{Floripa-Sat is a project whose objective is developing the first Cubesat nanosatellite completely developed by students in Brazil}
+  
+  \large{\textit{Intern in the Energy Power System}}
+}
+\begin{itemize}
+  \item \normalsize{Development of the firmware for the microcontroller and several other integrated circuits in C}
+  \begin{itemize}
+    \item Usage of communication protocols (I\textsuperscript{2}C, SPI, UART, One-Wire)
+    \item Implementation of Maximum Power Point Tracking algorithms
+    \item Implementation of the task scheduler
+  \end{itemize}
+  \item Development of the temperature control system for the nanosatellite batteries.
+  \item Development of the voltage and current measurement circuits using amplifiers and ADCs
+  \item Development of the test methodology and its documentation
+  \item Implementation of buck and boost switch-mode converters
+  \item Solar panels, switch-mode converters and load modeling using Matlab and Simscape
+  \item Participation in the project requirements definition
+  \item Participation in the project hardware development
+  \item Participation in the debugging of all modules \\
+\end{itemize}
+  
+\end{minipage}
+
+\Large{\textbf{Education}} \normalsize \\ \rule{\textwidth}{0.5pt} \\ \\
+\begin{minipage}[t]{0.2\textwidth}
+\large{03/2012 - \\ 02/2019}
+\end{minipage}
+\begin{minipage}[t]{0.8\textwidth}
+{
+  \setlength{\parskip}{5.5pt}
+  \Large{\textbf{Electrical Engineering Bachelor}}
+  
+  \large{\textit{Federal University of Santa Catarina, Brazil}} \\
+}
+\end{minipage} \\ \\
+
+\begin{comment}
+\Large{\textbf{Publicacões e Prêmios}} \normalsize \\ \rule{\textwidth}{0.5pt} \\ \\
+\begin{minipage}[t]{0.05\textwidth}
+  [1]
+\end{minipage}
+\begin{minipage}[t]{0.95\textwidth}
+  Slongo, L. K., Bezerra, E. A., Martinez, S. V., Eiterer, B. V. B., e Pereira, T. G. (2016) Nanosatellite energy harvesting maximization through an energy aware scheduling algorithm. Em \textit{Proceedings of II Latin American IAA CubeSat Workshop, Florianópolis.}
+\end{minipage} \\ \\
+\begin{minipage}[t]{0.05\textwidth}
+   [2]
+\end{minipage}
+\begin{minipage}[t]{0.95\textwidth}
+  Slongo, L. K., Eiterer, B. V. B., Martinez, S. V., and Bezerra, E. A. (2014) Towards Cubesat Electrical Power System Efficient Designs. Em \textit{Proceedings of 1st Latin American IAA Cubesat Workshop, Brasília.}
+\end{minipage} \\ \\
+\begin{minipage}[t]{0.05\textwidth}
+  -
+\end{minipage}
+\begin{minipage}[t]{0.95\textwidth}
+  Second IAA Latin American Cubesat Workshop Best Student Paper Award - 1º Lugar, como coautor do artigo Nanosatellite energy harvesting maximization through an energy aware scheduling algorithm.
+\end{minipage}
+\end{comment}
+
+\end{minipage} \hspace{0.03\textwidth}
+\begin{minipage}[t]{0.25\textwidth}
+  \raggedright
+  \Large{\textbf{Personal Information}} \normalsize \\ \rule{\textwidth}{0.5pt} \\ \hspace{0pt} \\
+  \raisebox{-.2\height}{\includegraphics[scale=0.075]{home-icon.png}} \small{Bartolomeu de Gusmão Street, 371, Florianópolis, SC, Brazil} \\ \hspace{0pt} \\
+  \raisebox{-.2\height}{\includegraphics[scale=0.075]{phone-icon.png}} \small{+55 48 99611-8470} \\ \hspace{0pt} \\
+  \raisebox{-.2\height}{\includegraphics[scale=0.075]{email-icon.png}}
+  \small{brunoeiterer@gmail.com} \\ \hspace{0pt} \\
+  \raisebox{-.2\height}{\includegraphics[scale=0.075]{linkedin-icon.png}}
+  \href{https://www.linkedin.com/in/brunoeiterer/?locale=en\_US}{brunoeiterer} \\ \hspace{0pt} \\
+ \raisebox{-.2\height}{\includegraphics[scale=0.075]{github-icon.png}} \href{https://github.com/brunoeiterer/}{brunoeiterer} \\ \hspace{0pt} \\ \hspace{0pt} \\
+ 
+ \Large{\textbf{Languages}} \normalsize \\ \rule{\textwidth}{0.5pt} \\ \hspace{0pt} \\
+ \begin{minipage}{0.65\textwidth}
+   \small{Brazilian Portuguese}
+ \end{minipage}
+ \begin{minipage}{0.3\textwidth}
+   \centering $\mdlgblkcircle$ $\mdlgblkcircle$ $\mdlgblkcircle$ \\  \footnotesize{Native}
+ \end{minipage} \\ \hspace{0pt} \\
+ 
+ \begin{minipage}{0.65\textwidth}
+   \small{English}
+ \end{minipage}
+ \begin{minipage}{0.3\textwidth}
+   \centering $\mdlgblkcircle$ $\mdlgblkcircle$ $\mdlgblkcircle$ \\  \footnotesize{Fluent}
+ \end{minipage} \\ \hspace{0pt} \\
+ 
+ \Large{\textbf{Programming}} \normalsize \\ \rule{\textwidth}{0.5pt} \\ \hspace{0pt} \\
+ 
+ \begin{minipage}{0.65\textwidth}
+   \small{C}
+ \end{minipage}
+ \begin{minipage}{0.3\textwidth}
+   \centering $\mdlgblkcircle$ $\mdlgblkcircle$ $\mdlgblkcircle$ \\  \footnotesize{Advanced}
+ \end{minipage} \\ \hspace{0pt} \\
+ 
+  \begin{minipage}{0.65\textwidth}
+   \small{Python}
+ \end{minipage}
+ \begin{minipage}{0.3\textwidth}
+   \centering $\mdlgblkcircle$ $\mdlgwhtcircle$ $\mdlgwhtcircle$ \\  \footnotesize{Basic}
+ \end{minipage} \\ \hspace{0pt} \\
+ 
+ \begin{minipage}{0.65\textwidth}
+   \small{C++}
+ \end{minipage}
+ \begin{minipage}{0.3\textwidth}
+   \centering $\mdlgblkcircle$ $\mdlgwhtcircle$ $\mdlgwhtcircle$ \\  \footnotesize{Basic}
+ \end{minipage} \\ \hspace{0pt} \\
+ 
+ \begin{minipage}{0.65\textwidth}
+   \small{Matlab}
+ \end{minipage}
+ \begin{minipage}{0.3\textwidth}
+   \centering $\mdlgblkcircle$ $\mdlgwhtcircle$ $\mdlgwhtcircle$ \\  \footnotesize{Basic}
+ \end{minipage} \\ \hspace{0pt} \\
+ 
+  \begin{minipage}{0.65\textwidth}
+   \small{C\# .NET}
+ \end{minipage}
+ \begin{minipage}{0.3\textwidth}
+   \centering $\mdlgblkcircle$ $\mdlgwhtcircle$ $\mdlgwhtcircle$ \\  \footnotesize{Basic}
+ \end{minipage} \\ \hspace{0pt} \\
+
+  \begin{minipage}{0.65\textwidth}
+	\small{WPF}
+  \end{minipage}
+  \begin{minipage}{0.3\textwidth}
+	\centering $\mdlgblkcircle$ $\mdlgwhtcircle$ $\mdlgwhtcircle$ \\  \footnotesize{Basic}
+  \end{minipage} \\ \hspace{0pt} \\
+ 
+  \Large{\textbf{Skills}} \normalsize \\ \rule{\textwidth}{0.5pt} \\ \hspace{0pt} \\
+  
+ \begin{minipage}{0.65\textwidth}
+   \small{Git}
+ \end{minipage}
+ \begin{minipage}{0.3\textwidth}
+   \centering $\mdlgblkcircle$ $\mdlgblkcircle$ $\mdlgwhtcircle$ \\  \footnotesize{Intermediate}
+ \end{minipage} \\ \hspace{0pt} \\
+ 
+ \begin{minipage}{0.65\textwidth}
+   \small{ClearCase}
+ \end{minipage}
+ \begin{minipage}{0.3\textwidth}
+   \centering $\mdlgblkcircle$ $\mdlgwhtcircle$ $\mdlgwhtcircle$ \\  \footnotesize{Basic}
+ \end{minipage} \\ \hspace{0pt} \\
+ 
+ \begin{minipage}{0.65\textwidth}
+   \small{MS Office}
+ \end{minipage}
+ \begin{minipage}{0.3\textwidth}
+   \centering $\mdlgblkcircle$ $\mdlgblkcircle$ $\mdlgwhtcircle$ \\  \footnotesize{Intermediate}
+ \end{minipage} \\ \hspace{0pt} \\
+ 
+ \begin{minipage}{0.65\textwidth}
+   \small{\LaTeX}
+ \end{minipage}
+ \begin{minipage}{0.3\textwidth}
+   \centering $\mdlgblkcircle$ $\mdlgblkcircle$ $\mdlgwhtcircle$ \\  \footnotesize{Intermediate}
+ \end{minipage} \\ \hspace{0pt} \\
+ 
+ \begin{minipage}{0.65\textwidth}
+   \small{Simulink}
+ \end{minipage}
+ \begin{minipage}{0.3\textwidth}
+   \centering $\mdlgblkcircle$ $\mdlgwhtcircle$ $\mdlgwhtcircle$ \\  \footnotesize{Basic}
+ \end{minipage} \\ \hspace{0pt} \\
+ 
+  \begin{minipage}{0.65\textwidth}
+   \small{Altium Designer}
+ \end{minipage}
+ \begin{minipage}{0.3\textwidth}
+   \centering $\mdlgblkcircle$ $\mdlgwhtcircle$ $\mdlgwhtcircle$ \\  \footnotesize{Basic}
+ \end{minipage} \\ \hspace{0pt} \\
+
+\end{minipage}
+\end{adjustwidth}
+
+\end{document}
