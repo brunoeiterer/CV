@@ -25,8 +25,9 @@
 
 \usepackage[hidelinks]{hyperref}
 
+\pagestyle{empty}
+
 \begin{document}
-	\pagenumbering{gobble}
 
 \begin{tikzpicture}[remember picture,overlay]
   \fill[header-gray] (current page.north west) rectangle ($(current page.north east)-(0cm,2.5cm)$);
@@ -56,9 +57,9 @@
 \begin{minipage}[t]{0.8\textwidth}
 {
   \setlength{\parskip}{5.5pt}
-  \Large{\textbf{Gertec - São Paulo}}
-
-  \large{\textit{Desenvolvedor de Software}}
+  \Large{\textbf{Gertec - São Paulo}} \\
+  \large{\textit{Desenvolvedor de Software}} \\
+  \large{\textit{Desenvolvedor de Software Pleno}}
   \begin{itemize}
     \item \normalsize{Desenvolvimento de Software Embarcado para soluções de pagamento em ambiente Linux e Android nas linguagens C, C++ e Java}
     \item \normalsize{Desenvolvimento de aplicativos Desktop em C\#/.NET e WPF}
