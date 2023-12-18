@@ -29,23 +29,20 @@
 	\pagenumbering{gobble}
 
 	\begin{tikzpicture}[remember picture,overlay]
-		\fill[header-gray] (current page.north west) rectangle ($(current page.north east)-(0cm,2.5cm)$);
+		\shade[left color = left-side-bar-gray, right color = right-side-bar-gray] ($(current page.north east)-(6.3cm,0cm)$) rectangle (current page.south east);
 	\end{tikzpicture}
 
 	\begin{tikzpicture}[remember picture,overlay]
-		\shade[left color = left-side-bar-gray, right color = right-side-bar-gray] ($(current page.north east)-(6.3cm,2.5cm)$) rectangle (current page.south east);
+		\shade[left color = left-main-gray, right color = right-main-gray] ($(current page.north west)-(0cm,0cm)$) rectangle ($(current page.south east)-(6.3cm,0cm)$);
 	\end{tikzpicture}
 
-	\begin{tikzpicture}[remember picture,overlay]
-		\shade[left color = left-main-gray, right color = right-main-gray] ($(current page.north west)-(0cm,2.5cm)$) rectangle ($(current page.south east)-(6.3cm,0cm)$);
-	\end{tikzpicture}
-
+	\begin{minipage}[t]{0.65\textwidth}
+	\vspace{5pt}
 	\Huge \textbf{Bruno Vale Barbosa Eiterer}
-
+	
 	\LARGE Software Developer
 	\vspace{12.5pt}
 	\begin{adjustwidth}{\parindent}{0pt}
-	\begin{minipage}[t]{0.65\textwidth}
 	\large I am a software developer working mainly with C, C++ and C\#, with previous experience in Java, Python and Javascript as well.\\
 
   \Large{\textbf{Experiences}} \normalsize \\ \rule{\textwidth}{0.5pt} \\ \\
@@ -144,9 +141,9 @@
   \setlength{\parskip}{5.5pt}
   \Large{\textbf{Electrical Engineering Bachelor}}
   
-  \large{\textit{Federal University of Santa Catarina, Brazil}} \\
+  \large{\textit{Federal University of Santa Catarina, Brazil}}
 }
-\end{minipage} \\ \\
+\end{minipage}
 
 \begin{comment}
 \Large{\textbf{Publicacões e Prêmios}} \normalsize \\ \rule{\textwidth}{0.5pt} \\ \\
@@ -170,9 +167,11 @@
 \end{minipage}
 \end{comment}
 
+\end{adjustwidth}
 \end{minipage} \hspace{0.03\textwidth}
 \begin{minipage}[t]{0.25\textwidth}
   \raggedright
+  \vspace{5pt}
   \Large{\textbf{Personal Information}} \normalsize \\ \rule{\textwidth}{0.5pt} \\ \hspace{0pt} \\
   \raisebox{-.2\height}{\includegraphics[scale=0.075]{home-icon.png}} \small{São José dos Campos, SP, Brazil} \\ \hspace{0pt} \\
   \raisebox{-.2\height}{\includegraphics[scale=0.075]{phone-icon.png}} \small{+55 48 99611-8470} \\ \hspace{0pt} \\
@@ -180,7 +179,7 @@
   \small{brunoeiterer@gmail.com} \\ \hspace{0pt} \\
   \raisebox{-.2\height}{\includegraphics[scale=0.075]{linkedin-icon.png}}
   \href{https://www.linkedin.com/in/brunoeiterer/?locale=en\_US}{brunoeiterer} \\ \hspace{0pt} \\
- \raisebox{-.2\height}{\includegraphics[scale=0.075]{github-icon.png}} \href{https://github.com/brunoeiterer/}{brunoeiterer} \\ \hspace{0pt} \\ \hspace{0pt} \\
+  \raisebox{-.2\height}{\includegraphics[scale=0.075]{github-icon.png}} \href{https://github.com/brunoeiterer/}{brunoeiterer} \\ \hspace{0pt} \\ \hspace{0pt} \\
  
  \Large{\textbf{Languages}} \normalsize \\ \rule{\textwidth}{0.5pt} \\ \hspace{0pt} \\
  \begin{minipage}{0.65\textwidth}
@@ -321,6 +320,5 @@
  \end{minipage} \\ \hspace{0pt} \\
 
 \end{minipage}
-\end{adjustwidth}
 
 \end{document}
