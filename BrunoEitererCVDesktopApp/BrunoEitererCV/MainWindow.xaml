@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window
+    x:Class="BrunoEitererCV.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BrunoEitererCV"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="Bruno Eiterer CV">
+
+    <Grid>
+        <NavigationView x:Name="MainNavigationView"
+                        SelectionChanged="OnNavigationViewSelectionChanged"
+                        PaneClosing="OnNavigationViewPaneClosed"
+                        PaneOpening="OnNavigationViewPaneOpened"
+                        IsBackButtonVisible="Collapsed"
+                        IsSettingsVisible="False"
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        >
+            <NavigationView.MenuItems>
+                <NavigationViewItem x:Name="AboutMe"
+                                    IsSelected="True"
+                                    >
+                    <NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xE77B;" />
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+                
+                <NavigationViewItem x:Name="ProfessionalExperience"
+                                    >
+                    <NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xE821;" />
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+
+                <NavigationViewItem x:Name="Education"
+                                    >
+                    <NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xE7BE;" />
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+
+                <NavigationViewItem x:Name="Languages"
+                                    >
+                    <NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xF2B7;" />
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+
+                <NavigationViewItem x:Name="Programming"
+                                    >
+                    <NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xE943;" />
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+
+                <NavigationViewItem x:Name="Skills"
+                                    >
+                    <NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xEF58;" />
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+
+                <NavigationViewItem x:Name="SideProjects"
+                                    >
+                    <NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xEA86;" />
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+
+            </NavigationView.MenuItems>
+
+            <ScrollViewer>
+                <Frame x:Name="ContentFrame"/>
+            </ScrollViewer>
+        </NavigationView>
+
+        <Grid Margin="16,0,0,10"
+              RowSpacing="10"
+              ColumnSpacing="15"
+              x:Name="Footer"
+              Canvas.ZIndex="1"
+              HorizontalAlignment="Left"
+              VerticalAlignment="Bottom"
+              >
+            
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="4*"/>
+            </Grid.ColumnDefinitions>
+
+            <FontIcon Glyph="&#xE715;"
+                      Grid.Row="0"
+                      Grid.Column="0"
+                      VerticalAlignment="Center"
+                      FontSize="16" />
+            <TextBlock Text="brunoeiterer@gmail.com"
+                       Grid.Row="0"
+                       Grid.Column="1"
+                       VerticalAlignment="Center"
+                       IsTextSelectionEnabled="True" />
+
+            <Image Source="ms-appx:///Assets/WhatsAppIcon.png"
+                   Grid.Row="1"
+                   Grid.Column="0"
+                   Width="16"
+                   Height="16"
+                   VerticalAlignment="Center" />
+            <TextBlock Text="+55 48 99611-8470"
+                       Grid.Row="1"
+                       Grid.Column="1"
+                       VerticalAlignment="Center"
+                       IsTextSelectionEnabled="True" />
+
+            <Image Source="ms-appx:///Assets/LinkedinIcon.png"
+                   Grid.Row="2"
+                   Grid.Column="0"
+                   Width="16"
+                   Height="16"
+                   VerticalAlignment="Center" />
+            <HyperlinkButton Content="linkedin.com/in/brunoeiterer/" 
+                             NavigateUri="https://www.linkedin.com/in/brunoeiterer" 
+                             Grid.Row="2" 
+                             Grid.Column="1" 
+                             VerticalAlignment="Center"
+                             Margin="-10.5,0,0,-5" />
+
+            <Image Source="ms-appx:///Assets/GithubIcon.png" 
+                   Grid.Row="3" 
+                   Grid.Column="0" 
+                   Width="16" 
+                   Height="16" 
+                   VerticalAlignment="Center" />
+            <HyperlinkButton Content="github.com/brunoeiterer" 
+                             NavigateUri="https://github.com/brunoeiterer" 
+                             Grid.Row="3" 
+                             Grid.Column="1" 
+                             VerticalAlignment="Center"
+                             Margin="-10.5,0,0,0" />
+
+            <FontIcon Glyph="&#xEA8A;"
+                      Grid.Row="4"
+                      Grid.Column="0"
+                      VerticalAlignment="Center"
+                      FontSize="16" />
+            <TextBlock Text="São José dos Campos, SP, Brazil"
+                       Grid.Row="4"
+                       Grid.Column="1"
+                       VerticalAlignment="Center"
+                       IsTextSelectionEnabled="True" />
+
+            <ComboBox x:Name="LanguageCombobox"
+                      SelectionChanged="OnLanguageSelectionChanged"
+                      Grid.Row="5"
+                      Grid.Column="0"
+                      Grid.ColumnSpan="2"
+                      >
+                <x:String>en-US</x:String>
+                <x:String>pt-BR</x:String>
+            </ComboBox>
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<local:PageBase
+    x:Class="BrunoEitererCV.Pages.ProfessionalExperience"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BrunoEitererCV.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel Orientation="Vertical"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Top"
+                Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Border Margin="2,2,2,10"
+                Padding="2"
+                CornerRadius="8"
+                Translation="0,0,8"
+                >
+            <Border.Shadow>
+                <ThemeShadow />
+            </Border.Shadow>
+
+            <Expander IsExpanded="True"
+                  ExpandDirection="Down"
+                  VerticalAlignment="Top"
+                  HorizontalAlignment="Stretch"
+                  HorizontalContentAlignment="Left"
+                  >
+
+                <Expander.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="ms-appx:///Assets/RDIIcon.png"
+                               Margin="-5,0,5,0"
+                               Width="32"
+                               Height="32"
+                               VerticalAlignment="Center" 
+                           />
+                        <TextBlock VerticalAlignment="Center">RDI Software @ McDonald's Global Account</TextBlock>
+                    </StackPanel>
+                </Expander.Header>
+
+                <StackPanel Orientation="Vertical" Spacing="12">
+                    <TextBlock x:Name="RDISeniorSoftwareDeveloperTitleTextBlock"
+                               Style="{ThemeResource SubtitleTextBlockStyle}"
+                               />
+                    <TextBlock Style="{ThemeResource BodyTextBlockStyle}">
+                        05/2022 -
+                    </TextBlock>
+                    <TextBlock x:Name="RDISeniorSoftwareDeveloperTextBlock"
+                               Style="{ThemeResource BodyTextBlockStyle}"
+                               />
+                    
+                    <TextBlock x:Name="RDISoftwareDevelopmentConsultantTitleTextBlock"
+                               Style="{ThemeResource SubtitleTextBlockStyle}"
+                               />
+                    <TextBlock Style="{ThemeResource BodyTextBlockStyle}">
+                        04/2021 - 05/2022
+                    </TextBlock>
+                    <TextBlock x:Name="RDISoftwareDevelopmentConsultantTextBlock"
+                               Style="{ThemeResource BodyTextBlockStyle}"
+                               />
+                </StackPanel>
+            </Expander>
+        </Border>
+
+        <Border Margin="2,2,2,10" Padding="2" CornerRadius="8" Translation="0,0,8">
+            <Border.Shadow>
+                <ThemeShadow />
+            </Border.Shadow>
+
+            <Expander IsExpanded="False"
+                  ExpandDirection="Down"
+                  VerticalAlignment="Top"
+                  HorizontalAlignment="Stretch"
+                  HorizontalContentAlignment="Left"
+                  >
+
+                <Expander.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="ms-appx:///Assets/GertecIcon.png"
+                               Margin="-5,0,5,0"
+                           Width="32"
+                           Height="32"
+                           VerticalAlignment="Center" 
+                           />
+                        <TextBlock VerticalAlignment="Center">Gertec</TextBlock>
+                    </StackPanel>
+                </Expander.Header>
+
+                <StackPanel Orientation="Vertical" Spacing="12">
+                    <TextBlock x:Name="GertecMiddleSoftwareDeveloperTitleTextBlock"
+                               Style="{ThemeResource SubtitleTextBlockStyle}"
+                               />
+                    <TextBlock Style="{ThemeResource BodyTextBlockStyle}">
+                        10/2020 - 04/2021
+                    </TextBlock>
+                    <TextBlock x:Name="GertecMiddleSoftwareDeveloperTextBlock"
+                               Style="{ThemeResource BodyTextBlockStyle}"
+                               />
+                    
+                    <TextBlock x:Name="GertecSoftwareDeveloperTitleTextBlock"
+                               Style="{ThemeResource SubtitleTextBlockStyle}"
+                               />
+                    <TextBlock Style="{ThemeResource BodyTextBlockStyle}">
+                        07/2019 - 10/2020
+                    </TextBlock>
+                    <TextBlock x:Name="GertecSoftwareDeveloperTextBlock"
+                               Style="{ThemeResource BodyTextBlockStyle}"
+                               />
+                </StackPanel>
+            </Expander>
+        </Border>
+
+        <Border Margin="2,2,2,10" Padding="2" CornerRadius="8" Translation="0,0,8">
+            <Border.Shadow>
+                <ThemeShadow />
+            </Border.Shadow>
+
+            <Expander IsExpanded="False"
+                  ExpandDirection="Down"
+                  VerticalAlignment="Top"
+                  HorizontalAlignment="Stretch"
+                  HorizontalContentAlignment="Left"
+                  >
+
+                <Expander.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <FontIcon Glyph="&#xE7F8;" />
+
+                        <TextBlock Margin="12,0,0,0">
+                            Freelance
+                        </TextBlock>
+                    </StackPanel>
+                </Expander.Header>
+
+                <StackPanel Orientation="Vertical" Spacing="12">
+                    <TextBlock x:Name="FreelanceSoftwareDeveloperTitle"
+                               Style="{ThemeResource SubtitleTextBlockStyle}"
+                               />
+                    <TextBlock Style="{ThemeResource BodyTextBlockStyle}">
+                        09/2020 - 01/2021
+                    </TextBlock>
+                    <TextBlock x:Name="FreelanceSoftwareDeveloperText"
+                               Style="{ThemeResource BodyTextBlockStyle}"
+                               />
+                </StackPanel>
+            </Expander>
+        </Border>
+
+        <Border Margin="2,2,2,10" Padding="2" CornerRadius="8" Translation="0,0,8">
+            <Border.Shadow>
+                <ThemeShadow />
+            </Border.Shadow>
+
+            <Expander IsExpanded="False"
+                  ExpandDirection="Down"
+                  VerticalAlignment="Top"
+                  HorizontalAlignment="Stretch"
+                  HorizontalContentAlignment="Left"
+                  >
+
+                <Expander.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="ms-appx:///Assets/ASMLIcon.png"
+                               Margin="-5,0,5,0"
+                           Width="32"
+                           Height="32"
+                           VerticalAlignment="Center" 
+                           />
+                        <TextBlock VerticalAlignment="Center">ASML</TextBlock>
+                    </StackPanel>
+                </Expander.Header>
+
+                <StackPanel Orientation="Vertical" Spacing="12">
+                    <TextBlock x:Name="ASMLEmbeddedSoftwareInternTitleTextBlock"
+                               Style="{ThemeResource SubtitleTextBlockStyle}"
+                               />
+                    <TextBlock Style="{ThemeResource BodyTextBlockStyle}">
+                        04/2018 - 02/2019
+                    </TextBlock>
+                    <TextBlock x:Name="ASMLEmbeddedSoftwareInternTextBlock"
+                               Style="{ThemeResource BodyTextBlockStyle}"
+                               />
+                </StackPanel>
+            </Expander>
+        </Border>
+    </StackPanel>
+</local:PageBase>

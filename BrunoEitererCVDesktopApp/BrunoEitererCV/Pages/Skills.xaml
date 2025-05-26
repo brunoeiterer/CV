@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<local:PageBase
+    x:Class="BrunoEitererCV.Pages.Skills"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BrunoEitererCV.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel Orientation="Vertical" 
+                HorizontalAlignment="Stretch" 
+                VerticalAlignment="Top" 
+                Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+                >
+        <Border Margin="2,2,2,10"
+                Padding="2"
+                CornerRadius="8"
+                Translation="0,0,8"
+                >
+            <Border.Shadow>
+                <ThemeShadow/>
+            </Border.Shadow>
+
+            <Expander IsExpanded="True"
+                  ExpandDirection="Down"
+                  VerticalAlignment="Top"
+                  HorizontalAlignment="Stretch"
+                  HorizontalContentAlignment="Left"
+                  Header="Git"
+                  >
+
+                <StackPanel Spacing="4">
+                    <TextBlock x:Name="GitYearsOfExperienceTextBlock"
+                               FontSize="14" 
+                               Foreground="#555"
+                               />
+                    <TextBlock x:Name="GitTextBlock"
+                               TextWrapping="Wrap"
+                               />
+                </StackPanel>
+            </Expander>
+        </Border>
+
+        <Border Margin="2,2,2,10"
+                Padding="2"
+                CornerRadius="8"
+                Translation="0,0,8"
+                >
+            <Border.Shadow>
+                <ThemeShadow/>
+            </Border.Shadow>
+
+            <Expander ExpandDirection="Down"
+                  VerticalAlignment="Top"
+                  HorizontalAlignment="Stretch"
+                  HorizontalContentAlignment="Left"
+                  Header="GitHub Copilot"
+                  >
+
+                <StackPanel Spacing="4">
+                    <TextBlock x:Name="GithubCopilotYearsOfExperienceTextBlock"
+                               FontSize="14"
+                               Foreground="#555"
+                               />
+                    <TextBlock x:Name="GithubCopilotTextBlock"
+                               TextWrapping="Wrap"
+                               />
+                </StackPanel>
+            </Expander>
+        </Border>
+
+        <Border Margin="2,2,2,10" Padding="2" CornerRadius="8" Translation="0,0,8">
+            <Border.Shadow>
+                <ThemeShadow/>
+            </Border.Shadow>
+
+            <Expander ExpandDirection="Down"
+                  VerticalAlignment="Top"
+                  HorizontalAlignment="Stretch"
+                  HorizontalContentAlignment="Left"
+                  Header="ChatGPT"
+                  >
+
+                <StackPanel Spacing="4">
+                    <TextBlock x:Name="ChatGPTYearsOfExperienceTextBlock"
+                               FontSize="14"
+                               Foreground="#555"
+                               />
+                    <TextBlock x:Name="ChatGPTTextBlock"
+                               TextWrapping="Wrap"
+                               />
+                </StackPanel>
+            </Expander>
+        </Border>
+
+        <Border Margin="2,2,2,10"
+                Padding="2"
+                CornerRadius="8"
+                Translation="0,0,8"
+                >
+            <Border.Shadow>
+                <ThemeShadow/>
+            </Border.Shadow>
+
+            <Expander ExpandDirection="Down"
+                  VerticalAlignment="Top"
+                  HorizontalAlignment="Stretch"
+                  HorizontalContentAlignment="Left"
+                  Header="TeamCity"
+                  >
+
+                <StackPanel Spacing="4">
+                    <TextBlock x:Name="TeamCityYearsOfExperienceTextBlock"
+                               FontSize="14"
+                               Foreground="#555"
+                               />
+                    <TextBlock x:Name="TeamCityTextBlock"
+                               TextWrapping="Wrap"
+                               />
+                </StackPanel>
+            </Expander>
+        </Border>
+
+        <Border Margin="2,2,2,10"
+                Padding="2"
+                CornerRadius="8"
+                Translation="0,0,8"
+                >
+            <Border.Shadow>
+                <ThemeShadow/>
+            </Border.Shadow>
+
+            <Expander ExpandDirection="Down"
+                  VerticalAlignment="Top"
+                  HorizontalAlignment="Stretch"
+                  HorizontalContentAlignment="Left"
+                  Header="Make"
+                  >
+
+                <StackPanel Spacing="4">
+                    <TextBlock x:Name="MakeYearsOfExperienceTextBlock"
+                               FontSize="14"
+                               Foreground="#555"
+                               />
+                    <TextBlock x:Name="MakeTextBlock"
+                               TextWrapping="Wrap"
+                               />
+                </StackPanel>
+            </Expander>
+        </Border>
+
+        <Border Margin="2,2,2,10"
+                Padding="2"
+                CornerRadius="8"
+                Translation="0,0,8"
+                >
+            <Border.Shadow>
+                <ThemeShadow/>
+            </Border.Shadow>
+
+            <Expander ExpandDirection="Down"
+                  VerticalAlignment="Top"
+                  HorizontalAlignment="Stretch"
+                  HorizontalContentAlignment="Left"
+                  Header="Scrum"
+                  >
+
+                <StackPanel Spacing="4">
+                    <TextBlock x:Name="ScrumYearsOfExperience"
+                               FontSize="14"
+                               Foreground="#555"
+                               />
+                    <TextBlock x:Name="ScrumTextBlock"
+                               TextWrapping="Wrap"
+                               />
+                </StackPanel>
+            </Expander>
+        </Border>
+
+        <Border Margin="2,2,2,10"
+                Padding="2"
+                CornerRadius="8"
+                Translation="0,0,8"
+                >
+            <Border.Shadow>
+                <ThemeShadow/>
+            </Border.Shadow>
+
+            <Expander ExpandDirection="Down"
+                  VerticalAlignment="Top"
+                  HorizontalAlignment="Stretch"
+                  HorizontalContentAlignment="Left"
+                  Header="Jira &amp; Confluence"
+                  >
+
+                <StackPanel Spacing="4">
+                    <TextBlock x:Name="JiraAndConfluenceYearsOfExperienceTextBlock"
+                               FontSize="14"
+                               Foreground="#555"
+                               />
+                    <TextBlock x:Name="JiraAndConfluenceTextBlock"
+                               TextWrapping="Wrap"
+                               />
+                </StackPanel>
+            </Expander>
+        </Border>
+
+        <Border Margin="2,2,2,10"
+                Padding="2"
+                CornerRadius="8"
+                Translation="0,0,8">
+            <Border.Shadow>
+                <ThemeShadow/>
+            </Border.Shadow>
+
+            <Expander ExpandDirection="Down"
+                  VerticalAlignment="Top"
+                  HorizontalAlignment="Stretch"
+                  HorizontalContentAlignment="Left"
+                  Header="MS Office"
+                  >
+
+                <StackPanel Spacing="4">
+                    <TextBlock x:Name="MSOfficeYearsOfExperienceTextBlock"
+                               FontSize="14"
+                               Foreground="#555"
+                               />
+                    <TextBlock x:Name="MSOfficeTextBlock"
+                               TextWrapping="Wrap"
+                               />
+                </StackPanel>
+            </Expander>
+        </Border>
+    </StackPanel>
+</local:PageBase>

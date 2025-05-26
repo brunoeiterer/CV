@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "BrunoEitererCV (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "BrunoEitererCV (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

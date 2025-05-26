@@ -1,0 +1,400 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutMe.Greeting" xml:space="preserve">
+    <value>Hi, I'm Bruno :)</value>
+  </data>
+  <data name="AboutMe.NavigationViewItemContent" xml:space="preserve">
+    <value>About Me</value>
+  </data>
+  <data name="AboutMe.Text" xml:space="preserve">
+    <value>I'm a generalist software developer from Brazil. I have over &lt;Bold&gt;10 years&lt;/Bold&gt; of experience in Software Development, with 6 years professionally and 4 year in an academic environment, working across &lt;Bold&gt;Embedded Systems&lt;/Bold&gt;, &lt;Bold&gt;Web&lt;/Bold&gt;, and &lt;Bold&gt;Desktop&lt;/Bold&gt;
+            Applications on an &lt;Bold&gt;Enterprise&lt;/Bold&gt; level, focusing on backend development and the application logic, while also contributing to the frontend/user interface
+            whenever needed.
+            &lt;LineBreak/&gt;
+            &lt;LineBreak/&gt;
+
+            I use mainly &lt;Bold&gt;C#&lt;/Bold&gt;, &lt;Bold&gt;C&lt;/Bold&gt; and &lt;Bold&gt;C++&lt;/Bold&gt;, complemented by experience with &lt;Bold&gt;Java&lt;/Bold&gt;, &lt;Bold&gt;JavaScript&lt;/Bold&gt;, &lt;Bold&gt;Typescript&lt;/Bold&gt; and &lt;Bold&gt;Python&lt;/Bold&gt;.
+            I have also used multiple web and desktop frameworks, like &lt;Bold&gt;AspNet.Core&lt;/Bold&gt;, &lt;Bold&gt;WCF&lt;/Bold&gt;, &lt;Bold&gt;NextJS&lt;/Bold&gt;, &lt;Bold&gt;WPF&lt;/Bold&gt;, &lt;Bold&gt;WinUI 3&lt;/Bold&gt; and &lt;Bold&gt;JavaFX&lt;/Bold&gt;.
+            &lt;LineBreak/&gt;
+            &lt;LineBreak/&gt;
+
+            I thrive in large, legacy codebases and enjoy solving complex problems regardless of the tech stack.
+            &lt;LineBreak/&gt;
+            &lt;LineBreak/&gt;
+
+            I'm always eager to learn new things independently, using tutorials, documentation, books, AI and just trying things out.
+            &lt;LineBreak/&gt;
+            &lt;LineBreak/&gt;
+
+            I also like to sharpen my skills with side projects. &lt;Hyperlink Click="OnSideProjectsHyperlinkClick"&gt;Check them out!&lt;/Hyperlink&gt;</value>
+  </data>
+  <data name="ASML.EmbeddedSoftwareIntern.Text" xml:space="preserve">
+    <value>• Implementation of the EtherCAT protocol prototype in the Motion Control group in &lt;Bold&gt;C&lt;/Bold&gt; and &lt;Bold&gt;C++&lt;/Bold&gt;, both in &lt;Bold&gt;Linux&lt;/Bold&gt;
+and &lt;Bold&gt;Bare-Metal&lt;/Bold&gt;.&lt;LineBreak /&gt;
+• Implementation of test code in &lt;Bold&gt;Python&lt;/Bold&gt;.&lt;LineBreak /&gt;
+• Successful integration of the protocol with existing code.&lt;LineBreak /&gt;
+• Development of getting started tutorials for new team members.</value>
+  </data>
+  <data name="ASML.EmbeddedSoftwareIntern.Title" xml:space="preserve">
+    <value>Embedded Software Intern</value>
+  </data>
+  <data name="BitbucketCommitPlotter.Text" xml:space="preserve">
+    <value>BitbucketCommitPlotter is an application that generates a Github-like commit graph for Bitbucket commits. &lt;LineBreak/&gt; 
+The tech stack used is &lt;Bold&gt;C#&lt;/Bold&gt; with &lt;Bold&gt;.NET8&lt;/Bold&gt;. &lt;LineBreak/&gt; 
+The code is available on &lt;Hyperlink NavigateUri="https://github.com/brunoeiterer/BitbucketCommitPlotter"&gt;Github&lt;/Hyperlink&gt;.</value>
+  </data>
+  <data name="C.Text" xml:space="preserve">
+    <value>I first had contact with C in a course during my graduation back in 2012.&lt;LineBreak/&gt;
+Since then I've used it extensively in all my academic and professional experiences.</value>
+  </data>
+  <data name="C.YearsOfExperience" xml:space="preserve">
+    <value>10 years of experience</value>
+  </data>
+  <data name="ChatGPT.Text" xml:space="preserve">
+    <value>I've integrated ChatGPT in my daily life as a learning tool, summarizing information, coding assistant in my side-projects, finding improvements opportunities that I might miss in my skills and career and as an overall boring stuff automation tool.</value>
+  </data>
+  <data name="ChatGPT.YearsOfExperience" xml:space="preserve">
+    <value>2 years of experience</value>
+  </data>
+  <data name="Cpp.Text" xml:space="preserve">
+    <value>I first had contact with the C++ for embedded systems course during my graduation back in 2018.&lt;LineBreak/&gt;
+Since then I've used it in all professional experiences.</value>
+  </data>
+  <data name="Cpp.YearsOfExperience" xml:space="preserve">
+    <value>7 years of experience</value>
+  </data>
+  <data name="CSharp.Text" xml:space="preserve">
+    <value>I started learning C# independently through the &lt;Hyperlink NavigateUri="https://www.robmiles.com/c-yellow-book"&gt;C# Yellow Book&lt;/Hyperlink&gt; in 2019.
+&lt;LineBreak/&gt;It is my main language for new development at my current job at RDI, and I've used it for developing internal tooling at Gertec.
+&lt;LineBreak/&gt;I've also used it in several &lt;Hyperlink Click="OnSideProjectsHyperlinkClick"&gt;Side Projects&lt;/Hyperlink&gt;, like this CV app.
+&lt;LineBreak/&gt;I have experience using &lt;Bold&gt;WPF&lt;/Bold&gt;, &lt;Bold&gt;WinUi 3&lt;/Bold&gt;, &lt;Bold&gt;WCF&lt;/Bold&gt; &lt;Bold&gt;.NET8&lt;/Bold&gt;, &lt;Bold&gt;.NET framework 4.6.2&lt;/Bold&gt; and &lt;Bold&gt;ASP.NET 
+Core&lt;/Bold&gt;.</value>
+  </data>
+  <data name="CSharp.YearsOfExperience" xml:space="preserve">
+    <value>6 years of experience</value>
+  </data>
+  <data name="CV.Text" xml:space="preserve">
+    <value>This CV is also one of my side projects.&lt;LineBreak/&gt;
+The tech stack used is &lt;Bold&gt;C#&lt;/Bold&gt; with &lt;Bold&gt;.NET8&lt;/Bold&gt; and &lt;Bold&gt;WinUi 3&lt;/Bold&gt;.&lt;LineBreak/&gt;
+The code is available on &lt;Hyperlink NavigateUri="https://github.com/brunoeiterer/CV"&gt;Github&lt;/Hyperlink&gt;.</value>
+  </data>
+  <data name="Education.NavigationViewItemContent" xml:space="preserve">
+    <value>Education</value>
+  </data>
+  <data name="ElectricalEngineering.Title" xml:space="preserve">
+    <value>Electrical Engineering Bachelor</value>
+  </data>
+  <data name="English.Level" xml:space="preserve">
+    <value>Advanced - Proficient in professional and casual settings.</value>
+  </data>
+  <data name="English.Text" xml:space="preserve">
+    <value>   • Used in all professional experiences for writing documentation, communicating with international suppliers, team members and stakeholders.&lt;LineBreak/&gt;
+   • Used while living abroad in the Netherlands, both professionally and casually.</value>
+  </data>
+  <data name="English.Title" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="Freelance.SoftwareDeveloper.Text" xml:space="preserve">
+    <value>Development of a Desktop app using &lt;Bold&gt;Java&lt;/Bold&gt; and &lt;Bold&gt;JavaFX&lt;/Bold&gt; for results calculation for small companies, with the following features:&lt;LineBreak/&gt;
+• Patrimony Control.&lt;LineBreak/&gt;
+• Chart of Accounts.&lt;LineBreak/&gt;
+• Monthly and yearly results calculation.&lt;LineBreak/&gt;
+• Comparison of results.&lt;LineBreak/&gt;
+• Support for printing or exporting the results to Excel and PDF.</value>
+  </data>
+  <data name="Freelance.SoftwareDeveloper.Title" xml:space="preserve">
+    <value>Software Developer</value>
+  </data>
+  <data name="French.Level" xml:space="preserve">
+    <value>Basic reading and writing skills.</value>
+  </data>
+  <data name="French.Text" xml:space="preserve">
+    <value>• Learned through classes and self-study, but have not used professionally.</value>
+  </data>
+  <data name="French.Title" xml:space="preserve">
+    <value>French</value>
+  </data>
+  <data name="Game.Text" xml:space="preserve">
+    <value>I'm developing a game which doesn't have a name yet. It is a walking simulator type of game, where the story is discovered through notes found around the environments.&lt;LineBreak/&gt;
+I'm doing all the development, including the 3D modeling in &lt;Bold&gt;Blender&lt;/Bold&gt;, using &lt;Bold&gt;Godot&lt;/Bold&gt; as the game engine and &lt;Bold&gt;C#&lt;/Bold&gt; as the gameplay programming language.</value>
+  </data>
+  <data name="Gertec.MiddleSoftwareDeveloper.Text" xml:space="preserve">
+    <value>• Embedded Systems Development: Focused on developing and optimizing software for credit card machines that process &lt;Bold&gt;millions of transactions daily&lt;/Bold&gt;, primarily on &lt;Bold&gt;Embedded Linux&lt;/Bold&gt; using &lt;Bold&gt;C&lt;/Bold&gt; and &lt;Bold&gt;C++&lt;/Bold&gt;. Ensured high reliability and performance, critical for secure transaction processing.&lt;LineBreak /&gt;
+• Desktop Applications: Development of desktop applications in &lt;Bold&gt;C#&lt;/Bold&gt; and &lt;Bold&gt;WPF&lt;/Bold&gt;, enhancing internal tools with improved functionality and user experience.&lt;LineBreak /&gt;
+• Web Applications: Development of web applications for &lt;Bold&gt;Jira&lt;/Bold&gt; and &lt;Bold&gt;Confluence&lt;/Bold&gt; using &lt;Bold&gt;Java&lt;/Bold&gt; and &lt;Bold&gt;Spring Boot&lt;/Bold&gt;.&lt;LineBreak /&gt;
+• Secondary Responsibilities: Contributed to select &lt;Bold&gt;Android&lt;/Bold&gt; and &lt;Bold&gt;Java&lt;/Bold&gt;-based features.</value>
+  </data>
+  <data name="Gertec.MiddleSoftwareDeveloper.Title" xml:space="preserve">
+    <value>Middle Software Developer</value>
+  </data>
+  <data name="Gertec.SoftwareDeveloper.Text" xml:space="preserve">
+    <value>• Linux-Based Credit Card Systems: Development of &lt;Bold&gt;Embedded Linux&lt;/Bold&gt; systems with a primary focus on &lt;Bold&gt;C&lt;/Bold&gt; and &lt;Bold&gt;C++&lt;/Bold&gt; to ensure stable, efficient software for secure payment processing.&lt;LineBreak /&gt;
+• Desktop Development: Created and maintained internal desktop applications in &lt;Bold&gt;C#&lt;/Bold&gt; and &lt;Bold&gt;WPF&lt;/Bold&gt;, optimizing features for end-user productivity.</value>
+  </data>
+  <data name="Gertec.SoftwareDeveloper.Title" xml:space="preserve">
+    <value>Software Developer</value>
+  </data>
+  <data name="Git.Text" xml:space="preserve">
+    <value>I started using Git roughly around the same time I started learning about software development in my graduation, and I've been using it in every professional experience since then. I'm proficient and comfortable using it.</value>
+  </data>
+  <data name="Git.YearsOfExperience" xml:space="preserve">
+    <value>10 years of experience</value>
+  </data>
+  <data name="GithubCopilot.Text" xml:space="preserve">
+    <value>I've been using Github Copilot at my current job at RDI, since it is the approved internal AI tool. I use it for code generation, both for production code (of course, it is reviewed by me before commiting) and internal tooling, codebase navigation and concepts discussion.</value>
+  </data>
+  <data name="GithubCopilot.YearsOfExperience" xml:space="preserve">
+    <value>1 year of experience</value>
+  </data>
+  <data name="IPCAProcessor.Text" xml:space="preserve">
+    <value>IPCAProcessor is an app that processes IPCA (brazillian inflation data) and outputs it in several different formats, like JSON, PNG graph, CSV and SQL dump.&lt;LineBreak/&gt; 
+The tech stack used is &lt;Bold&gt;C#&lt;/Bold&gt; with &lt;Bold&gt;.NET8&lt;/Bold&gt;.&lt;LineBreak/&gt; 
+The code is available on &lt;Hyperlink NavigateUri="https://github.com/brunoeiterer/IPCAProcessor"&gt;Github&lt;/Hyperlink&gt;.</value>
+  </data>
+  <data name="Java.Text" xml:space="preserve">
+    <value>I have used Java to create Jira and Confluence plugins, and also to build a desktop application as a freelancer.</value>
+  </data>
+  <data name="Java.YearsOfExperience" xml:space="preserve">
+    <value>3 years of experience</value>
+  </data>
+  <data name="Javascript.Text" xml:space="preserve">
+    <value>I use Javascript in a legacy localization layer at my current job at RDI. Although Javascript is tipically a frontend languange, this localization layer runs on the application backend.</value>
+  </data>
+  <data name="Javascript.YearsOfExperience" xml:space="preserve">
+    <value>4 years of experience</value>
+  </data>
+  <data name="JiraAndConfluence.Text" xml:space="preserve">
+    <value>I've started using Jira and Confluence during my internship at ASML, and have used them in all my professional experiences. I'm confortable using their tools, and have even developed plugins for them to automate tasks during my time at Gertec.</value>
+  </data>
+  <data name="JiraAndConfluence.YearsOfExperience" xml:space="preserve">
+    <value>7 years of experience</value>
+  </data>
+  <data name="Languages.NavigationViewItemContent" xml:space="preserve">
+    <value>Languages</value>
+  </data>
+  <data name="Lifejournaler.Text" xml:space="preserve">
+    <value>Lifejournaler is a lightweight open-source journaling app. It allows recording daily thoughts and behaviors, tracking mood variations over time and providing statistics.&lt;LineBreak/&gt;
+The frontend is built with &lt;Bold&gt;Next.js (typescript)&lt;/Bold&gt; and the backend uses &lt;Bold&gt;C# ASP.NET Core&lt;/Bold&gt; with a &lt;Bold&gt;PosgreSQL&lt;/Bold&gt; database, accessed through the &lt;Bold&gt;Entity Framework.&lt;/Bold&gt;&lt;LineBreak/&gt;
+The code is available on &lt;Hyperlink NavigateUri="https://github.com/brunoeiterer/lifejournaler"&gt;Github&lt;/Hyperlink&gt; and the app is running at &lt;Hyperlink NavigateUri="https://lifejournaler.com/"&gt;https://lifejournaler.com/&lt;/Hyperlink&gt;.&lt;LineBreak/&gt;
+The app is hosted on a &lt;Bold&gt;Linux VM&lt;/Bold&gt; on the &lt;Bold&gt;Oracle Cloud&lt;/Bold&gt;.</value>
+  </data>
+  <data name="Make.Text" xml:space="preserve">
+    <value>At Gertec, Make was used to build the embedded software for both the bare-metal and linux devices.</value>
+  </data>
+  <data name="Make.YearsOfExperience" xml:space="preserve">
+    <value>2 years of experience</value>
+  </data>
+  <data name="MSOffice.Text" xml:space="preserve">
+    <value>I've used MS Office since my school days, since it is such widespread set of tools. Now a days I prefer to use other tools for documentation (like wikis), but I still use MS Office if the task requires it, like generating the Release Notes for new versions at RDI. I try to automate most of this work, but sometimes manual intervention is still required.</value>
+  </data>
+  <data name="MSOffice.YearsOfExperience" xml:space="preserve">
+    <value>15+ years of experience</value>
+  </data>
+  <data name="Portuguese.Level" xml:space="preserve">
+    <value>Native, born in Brazil.</value>
+  </data>
+  <data name="Portuguese.Title" xml:space="preserve">
+    <value>Portuguese</value>
+  </data>
+  <data name="PrintReady.Text" xml:space="preserve">
+    <value>PrintReady is a Windows desktop app that automatically resizes and add borders to your pictures, making them ready for printing, avoiding unwanted stretching and cut-offs.&lt;LineBreak/&gt;
+The tech stack used is &lt;Bold&gt;C#&lt;/Bold&gt; with &lt;Bold&gt;.NET8&lt;/Bold&gt; and &lt;Bold&gt;WinUi 3&lt;/Bold&gt;. &lt;LineBreak/&gt;
+The code is available on &lt;Hyperlink NavigateUri="https://github.com/brunoeiterer/PrintReady"&gt;Github&lt;/Hyperlink&gt; and the app is available at the &lt;Hyperlink NavigateUri="https://apps.microsoft.com/detail/9nng012q1l9n"&gt;Microsoft Store&lt;/Hyperlink&gt;.</value>
+  </data>
+  <data name="ProfessionalExperience.NavigationViewItemContent" xml:space="preserve">
+    <value>Professional Experience</value>
+  </data>
+  <data name="Programming.NavigationViewItemContent" xml:space="preserve">
+    <value>Programming</value>
+  </data>
+  <data name="Python.Text" xml:space="preserve">
+    <value>I first started learning python through the book &lt;Hyperlink NavigateUri="https://jakevdp.github.io/WhirlwindTourOfPython/"&gt;A Whirlwind Tour of Python&lt;/Hyperlink&gt;.
+&lt;LineBreak/&gt;I don't use it as my main language for development, but I consistently use it for scripts and automations, like log processing and Bitbucket PR statistics.</value>
+  </data>
+  <data name="Python.YearsOfExperience" xml:space="preserve">
+    <value>6 years of experience</value>
+  </data>
+  <data name="RDI.SeniorSoftwareDeveloper.Text" xml:space="preserve">
+    <value>• Full-Stack Development: Development of McDonald’s restaurant applications that process &lt;Bold&gt;millions of orders daily&lt;/Bold&gt;, utilizing &lt;Bold&gt;C#&lt;/Bold&gt;, &lt;Bold&gt;C++&lt;/Bold&gt;, &lt;Bold&gt;C&lt;/Bold&gt; and &lt;Bold&gt;JavaScript&lt;/Bold&gt; with &lt;Bold&gt;RavenDB (NoSQL)&lt;/Bold&gt; to ensure robust and reliable software solutions.&lt;LineBreak /&gt;
+• Critical Issue Resolution: Addressed high-priority issues, including production incidents, reducing average root cause analysis and resolution times by 40%.&lt;LineBreak /&gt;
+• Leadership &amp;amp; Expertise: Acted as a dev lead and subject matter expert on demand, guiding teams through complex challenges and contributing valuable insights to enhance product quality.&lt;LineBreak /&gt;
+• International Collaboration: Worked closely with global teams and stakeholders to address diverse project requirements, ensuring alignment across time zones and delivering solutions that meet international standards.</value>
+  </data>
+  <data name="RDI.SeniorSoftwareDeveloper.Title" xml:space="preserve">
+    <value>Senior Software Developer</value>
+  </data>
+  <data name="RDI.SoftwareDevelopmentConsultant.Text" xml:space="preserve">
+    <value>• In-House Development: Collaborated with international teams as an in-house consultant, working on core applications for McDonald’s using &lt;Bold&gt;C#&lt;/Bold&gt;, &lt;Bold&gt;C++&lt;/Bold&gt;, &lt;Bold&gt;C&lt;/Bold&gt;, and &lt;Bold&gt;JavaScript&lt;/Bold&gt;.&lt;LineBreak /&gt;
+• Problem-Solving &amp;amp; Reliability: Tackled critical issues and production incidents with efficiency, establishing a track record for reducing response times and enhancing application reliability.&lt;LineBreak /&gt;
+• Foundation for Full-Time Role: Built a strong working relationship with RDI Software by consistently delivering high-quality solutions, which led to a direct hire as a Senior Software Developer.</value>
+  </data>
+  <data name="RDI.SoftwareDevelopmentConsultant.Title" xml:space="preserve">
+    <value>Software Development Consultant</value>
+  </data>
+  <data name="Scrum.Text" xml:space="preserve">
+    <value>I've used Scrum as the Agile Framework for development since my time at the Floripa-Sat project, and I've used it in all my professional experiences.</value>
+  </data>
+  <data name="Scrum.YearsOfExperience" xml:space="preserve">
+    <value>10 years of experience</value>
+  </data>
+  <data name="SideProjects.NavigationViewItemContent" xml:space="preserve">
+    <value>Side Projects</value>
+  </data>
+  <data name="Skills.NavigationViewItemContent" xml:space="preserve">
+    <value>Skills</value>
+  </data>
+  <data name="TeamCity.Text" xml:space="preserve">
+    <value>TeamCity is the official CI/CD tool at RDI, and I've used it continuously for the past 4 years.</value>
+  </data>
+  <data name="TeamCity.YearsOfExperience" xml:space="preserve">
+    <value>4 years of experience</value>
+  </data>
+  <data name="Typescript.Text" xml:space="preserve">
+    <value>I use Typescript when working on the frontend at RDI. This is a more sporadic use, since my focus is on the backend.
+&lt;LineBreak/&gt;I have also used it on the frontend in &lt;Hyperlink Click="OnSideProjectsHyperlinkClick"&gt;Side Projects&lt;/Hyperlink&gt;.</value>
+  </data>
+  <data name="Typescript.YearsOfExperience" xml:space="preserve">
+    <value>4 years of experience</value>
+  </data>
+  <data name="UFSC.Text" xml:space="preserve">
+    <value>Although I studied Electrical Engineering, I started to realize I like software development taking some classes on &lt;Bold&gt;C&lt;/Bold&gt;, &lt;Bold&gt;C++&lt;/Bold&gt; 
+and &lt;Bold&gt;Microcontrollers&lt;/Bold&gt;, learning &lt;Bold&gt;Assembly&lt;/Bold&gt;.&lt;LineBreak/&gt;
+&lt;LineBreak/&gt;
+During my third year I had the opportunity to join the Floripa-Sat project, which developed the first Cubesat nanosatellite completely developed
+by students in Brazil. Completely developing the firmware for the Energy Power System from scratch I became sure software development was my passion
+and what I wanted to do in my career. My activities included:&lt;LineBreak/&gt;
+• Development of the firmware for the microcontroller and several other integrated circuits in &lt;Bold&gt;C&lt;/Bold&gt;.&lt;LineBreak/&gt;
+    • Usage of communication protocols (&lt;Bold&gt;I²C&lt;/Bold&gt;, &lt;Bold&gt;SPI&lt;/Bold&gt;, &lt;Bold&gt;UART&lt;/Bold&gt;, &lt;Bold&gt;One-Wire&lt;/Bold&gt;).&lt;LineBreak/&gt;
+    • Implementation of &lt;Bold&gt;Maximum Power Point Tracking&lt;/Bold&gt; algorithms.&lt;LineBreak/&gt;
+    • Implementation of the &lt;Bold&gt;task scheduler&lt;/Bold&gt;.&lt;LineBreak/&gt;
+• Development of the temperature control system for the nanosatellite batteries.&lt;LineBreak/&gt;
+• Development of the voltage and current measurement circuits using amplifiers and ADCs.&lt;LineBreak/&gt;
+• Development of the test methodology and its documentation.&lt;LineBreak/&gt;
+• Implementation of buck and boost switch-mode converters.&lt;LineBreak/&gt;
+• Solar panels, switch-mode converters and load modeling using &lt;Bold&gt;Matlab&lt;/Bold&gt; and &lt;Bold&gt;Simscape&lt;/Bold&gt;.&lt;LineBreak/&gt;
+• Participation in the project's hardware development.&lt;LineBreak/&gt;
+• All acitivities were executed under &lt;Bold&gt;Scrum&lt;/Bold&gt; methodology.&lt;LineBreak/&gt;
+Find out more about the project at the &lt;Hyperlink NavigateUri="https://floripasat.ufsc.br"&gt;Official Website&lt;/Hyperlink&gt; and the
+&lt;Hyperlink NavigateUri="https://github.com/floripasat"&gt;Official Github Repo&lt;/Hyperlink&gt;.</value>
+  </data>
+  <data name="UFSC.Title" xml:space="preserve">
+    <value>Federal University of Santa Catarina, Brazil</value>
+  </data>
+</root>

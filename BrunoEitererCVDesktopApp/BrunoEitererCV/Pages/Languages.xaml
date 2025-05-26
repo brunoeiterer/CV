@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<local:PageBase
+    x:Class="BrunoEitererCV.Pages.Languages"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BrunoEitererCV.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel Orientation="Vertical"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Top"
+                Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+                >
+        <Border Margin="2,2,2,10"
+                Padding="2"
+                CornerRadius="8"
+                Translation="0,0,8"
+                >
+            <Border.Shadow>
+                <ThemeShadow/>
+            </Border.Shadow>
+
+            <Expander IsExpanded="True"
+                  ExpandDirection="Down"
+                  VerticalAlignment="Top"
+                  HorizontalAlignment="Stretch"
+                  HorizontalContentAlignment="Left"
+                  >
+
+                <Expander.Header>
+                    <StackPanel Orientation="Horizontal" 
+                                Spacing="4"
+                                >
+                        <Image Source="ms-appx:///Assets/UnitedStatesFlag.png" 
+                               Width="24" 
+                               Height="12"
+                               />
+                        <TextBlock x:Name="EnglishTitleTextBlock" 
+                                   FontSize="18" 
+                                   FontWeight="Bold"
+                                   />
+                    </StackPanel>
+                </Expander.Header>
+
+                <StackPanel Spacing="4">
+                    <TextBlock x:Name="EnglishLevelTextBlock"
+                               FontSize="14"
+                               Foreground="#555"
+                               />
+                    <TextBlock x:Name="EnglishTextBlock"
+                               TextWrapping="Wrap"
+                               Foreground="#333"
+                               />
+                </StackPanel>
+            </Expander>
+        </Border>
+
+        <Border Margin="2,2,2,10"
+                Padding="2"
+                CornerRadius="8"
+                Translation="0,0,8"
+                >
+            <Border.Shadow>
+                <ThemeShadow/>
+            </Border.Shadow>
+
+            <Expander IsExpanded="True"
+                  ExpandDirection="Down"
+                  VerticalAlignment="Top"
+                  HorizontalAlignment="Stretch"
+                  HorizontalContentAlignment="Left"
+                  >
+
+                <Expander.Header>
+                    <StackPanel Orientation="Horizontal"
+                                Spacing="4"
+                                >
+                        <Image Source="ms-appx:///Assets/BrazilFlag.png"
+                               Width="24"
+                               Height="12" 
+                               />
+                        <TextBlock x:Name="PortugueseTitleTextBlock"
+                                   FontSize="18" 
+                                   FontWeight="Bold"
+                                   />
+                    </StackPanel>
+                </Expander.Header>
+
+                <StackPanel Spacing="4">
+                    <TextBlock x:Name="PortugueseLevelTextBlock"
+                               FontSize="14"
+                               Foreground="#555"
+                               />
+                </StackPanel>
+                
+            </Expander>
+        </Border>
+
+        <Border Margin="2,2,2,10"
+                Padding="2"
+                CornerRadius="8"
+                Translation="0,0,8"
+                >
+            <Border.Shadow>
+                <ThemeShadow/>
+            </Border.Shadow>
+
+            <Expander IsExpanded="True"
+                  ExpandDirection="Down"
+                  VerticalAlignment="Top"
+                  HorizontalAlignment="Stretch"
+                  HorizontalContentAlignment="Left"
+                  >
+
+                <Expander.Header>
+                    <StackPanel Orientation="Horizontal"
+                                Spacing="4"
+                                >
+                        <Image Source="ms-appx:///Assets/FranceFlag.png"
+                               Width="24"
+                               Height="12"
+                               />
+                        <TextBlock x:Name="FrenchTitleTextBlock"
+                                   FontSize="18"
+                                   FontWeight="Bold"
+                                   />
+                    </StackPanel>
+                </Expander.Header>
+
+                <StackPanel Spacing="4">
+                    <TextBlock x:Name="FrenchLevelTextBlock"
+                               FontSize="14"
+                               Foreground="#555"
+                               />
+                    <TextBlock x:Name="FrenchTextBlock"
+                               Foreground="#333"
+                               />
+                </StackPanel>
+            </Expander>
+        </Border>
+    </StackPanel>
+</local:PageBase>
