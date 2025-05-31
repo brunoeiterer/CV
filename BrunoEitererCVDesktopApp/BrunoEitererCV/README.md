@@ -27,7 +27,10 @@ This application is a windows desktop app containing my CV/portfolio.
 git clone https://github.com/brunoeiterer/CV.git
 ```
 - Open the solution in Visual Studio
-- Either run the unpackaged build for `BrunoEitererCV`, or use the publish profile in both projects to generate the final output
+- Run the unpackaged build
+
+## Publishing
+- Open the solution in Visual Studio and use the provided publishing profile in Build -> Publish. This should be published together with the Executor project.
 
 ## License
 
