@@ -30,7 +30,7 @@ git clone https://github.com/brunoeiterer/CV.git
 - Run the unpackaged build
 
 ## Publishing
-- Open the solution in Visual Studio and use the provided publishing profile in Build -> Publish. This should be published together with the Executor project.
+- Open the solution in Visual Studio and use the provided publishing profile in Build -> Publish. This should be published together with the `Executor` project.
 
 ## License
 
