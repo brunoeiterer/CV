@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel;
-using Windows.ApplicationModel.Resources;
-using Windows.Globalization;
+using System;
+using System.Collections.Generic;
+using System.Xml.Linq;
 
 namespace BrunoEitererCV.Services
 {
@@ -8,24 +9,36 @@ namespace BrunoEitererCV.Services
     {
         public event PropertyChangedEventHandler? PropertyChanged;
 
-        private ResourceLoader _resourceLoader;
+        private readonly Dictionary<string, string> _resources = [];
 
-        public string this[string key] => _resourceLoader.GetString(key);
-
-        public LocalizationService()
+        private void LoadResources(string filePath)
         {
-            ApplicationLanguages.PrimaryLanguageOverride = "en";
-            _resourceLoader = ResourceLoader.GetForViewIndependentUse();
+            _resources.Clear();
+
+            var doc = XDocument.Load(filePath);
+
+            if(doc.Root == null)
+            {
+                throw new InvalidOperationException($"The resource file {filePath} is invalid");
+            }
+
+            foreach (var data in doc.Root.Elements("data"))
+            {
+                var name = data.Attribute("name")?.Value.Replace('.', '/');
+                var value = data.Element("value")?.Value;
+
+                if (name != null && value != null)
+                {
+                    _resources[name] = value;
+                }
+            }
         }
+
+        public string this[string key] => _resources[key];
 
         public void ChangeLanguage(string languageCode)
         {
-            ApplicationLanguages.PrimaryLanguageOverride = languageCode;
-
-            Windows.ApplicationModel.Resources.Core.ResourceContext.GetForViewIndependentUse().Reset();
-            Windows.ApplicationModel.Resources.Core.ResourceManager.Current.DefaultContext.Reset();
-
-            _resourceLoader = ResourceLoader.GetForViewIndependentUse();
+            LoadResources($"Strings/Resources-{languageCode}.resw");
 
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(null));
         }
